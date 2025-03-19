@@ -6,6 +6,7 @@ const nextConfig = {
   },
   basePath: process.env.NODE_ENV === 'production' ? '/bracu-hub' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/bracu-hub/' : '',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
