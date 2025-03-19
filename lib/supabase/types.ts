@@ -130,4 +130,22 @@ export interface Database {
       [_ in never]: never
     }
   }
+}
+
+export interface Message {
+  id: string
+  content: string
+  user_id: string
+  created_at: string
+  updated_at?: string
+}
+
+export interface User {
+  id: string
+  email: string
+  username?: string
+  full_name?: string
+  avatar_url?: string
+  created_at: string
+  updated_at?: string
 } 
