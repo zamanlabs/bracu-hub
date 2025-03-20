@@ -33,13 +33,11 @@ npm install
 yarn install
 ```
 
-3. Set up environment variables:
-   - Copy `.env.example` to `.env.local`
-   - Add your Supabase credentials:
-     ```
-     NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-     ```
+3. Create a `.env.local` file in the root directory with your Supabase credentials:
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
 4. Run the development server:
 ```bash
@@ -53,13 +51,6 @@ yarn dev
 ## Deployment
 
 This project is configured for deployment on GitHub Pages. The site is automatically deployed when changes are pushed to the main branch.
-
-### Environment Variables for Deployment
-
-When deploying to GitHub Pages, make sure to add the following secrets in your repository's Settings → Secrets and variables → Actions:
-
-- `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase anonymous key
 
 ## Contributing
 
