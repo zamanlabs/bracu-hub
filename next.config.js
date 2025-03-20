@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/bracu-hub' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/bracu-hub/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/bracu-hub.github.io' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/bracu-hub.github.io/' : '',
   trailingSlash: true,
 }
 
